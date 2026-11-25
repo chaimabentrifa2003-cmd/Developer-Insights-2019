@@ -27,3 +27,11 @@ def categorical_counts(df: pd.DataFrame, columns=None, top: int = 10) -> dict:
         for col in columns
         if col in df.columns
     }
+
+
+def missing_summary(df: pd.DataFrame, top: int = 10) -> pd.DataFrame:
+    """Columns with the most missing values (count and percentage)."""
+    count = df.isna().sum()
+    percent = (count / len(df) * 100).round(2)
+    summary = pd.DataFrame({"missing": count, "missing_pct": percent})
+    return summary.sort_values("missing", ascending=False).head(top)
