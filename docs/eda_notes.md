@@ -5,3 +5,5 @@
 - Main numeric columns: `ConvertedComp`, `CompTotal`, `WorkWeekHrs`, `CodeRevHrs`.
 - Many columns contain missing values (see the missing values analysis).
 - Multi-value columns (e.g. `LanguageWorkedWith`) use `;` as separator and need splitting.
+- `missing_summary` lists the columns with the most missing values.
+- Basic tests are in `tests/test_eda.py` (run with `pytest`).
