@@ -3,5 +3,5 @@ __pycache__/
 *.pyc
 .env
 
-# Large dataset
+# Large dataset (full file not committed; data/survey_sample.csv is committed)
 data/survey_results_public.csv
