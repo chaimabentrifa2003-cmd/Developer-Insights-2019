@@ -1,4 +1,4 @@
-﻿# Data exploration notes
+# Data exploration notes
 
 - Functions are in `src/eda.py`: `dataset_shape`, `column_types`, `numeric_summary`, `categorical_counts`.
 - The dataset is the Stack Overflow Developer Survey 2019 (one row per respondent).
