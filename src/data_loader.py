@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import pandas as pd
 
@@ -17,11 +16,3 @@ def load_data():
         )
 
     return pd.read_csv(DATASET_PATH, low_memory=False)
-
-venv/
-__pycache__/
-*.pyc
-.env
-
-# Large dataset
-data/survey_results_public.csv
